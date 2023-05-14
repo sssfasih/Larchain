@@ -20,7 +20,8 @@
         <!-- Search bar section -->
         <!-- Search bar section -->
         <div class="search-bar">
-            <form action="data_display.html" method="post">
+            <form action="{% url 'product' %}" method="post">
+                {% csrf_token %}
 
                 <input type="text" id="barcode" name="barcode" required placeholder="xxx-xxx-xxx" color="#BDBDBD" >
                 <button type="submit">Search</button>

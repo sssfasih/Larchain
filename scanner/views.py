@@ -13,7 +13,7 @@ def index(request):
     return render(request,'scanner/qrcod.html')
 
 def product_page(request):
-    return render(request,'')
+    return render(request,'scanner/productdet.html')
 
 def login_view(request):
     if request.method == "POST":

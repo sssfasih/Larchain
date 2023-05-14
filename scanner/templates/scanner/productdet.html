@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{% static 'scanner/style.css' %}">
+</head>
+<body>
+    <h1>Product Search</h1>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Enter product name">
+    <input type="submit" value="Search">
+  </form>
+
+  <div id="search-results">
+    
+  </div>
+
+  <script src="script.js"></script>
+    
+<div class="card">
+    <img src="{% static 'scanner/watermelon1.jpg' %}" alt="Watermelon" style="width:80%">
+    <h1>Watermelon</h1>
+    <!-- <p class="price">$19.99</p> -->
+    <p class="details"> <b>Origin:</b> Almeria, Spain</p>
+    <p class="details"> <b>Type of cultivation:</b> Organic garden</p>
+    <p class="details"> <b>Harvest date:</b> May 10,2023</p>
+    <p class="details"> <b>Packaging date:</b> May 11,2023</p>
+    <p class="details"> <b>Distributor:</b> "EcoFoods"</p>
+    <p class="details"> <b>Carrier:</b> "EcoLogistics"</p>
+    <p class="details"> <b>Store:</b> "Green Market"</p>
+    <p class="details"> <b>Certifications:</b> Fair Trade</p>
+    <p></p>
+  </div>
+
+  
+</body>

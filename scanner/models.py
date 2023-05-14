@@ -7,6 +7,14 @@ class User(AbstractUser):
     pass
 
 class Product(models.Model):
-    pass
+    code = models.CharField(max_length=50,default="")
+    origin= models.CharField(max_length=50)
+    type= models.CharField(max_length=50)
+    harvest_date= models.DateField()
+    pkg_date = models.DateField()
+    distributor = models.CharField(max_length=50)
+    career = models.CharField(max_length=50)
+    store=models.CharField(max_length=50)
+    certifications =models.CharField(max_length=50)
 
 
