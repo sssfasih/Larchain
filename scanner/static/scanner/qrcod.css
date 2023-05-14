@@ -1,0 +1,73 @@
+/* Set body margin and padding to zero */
+body {
+	margin: 0;
+	padding: 0;
+    background-color: #ccc;
+}
+
+
+
+/* Style photo bar */
+.photo-bar {
+	background-color: #f2f2f2;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Style search bar */
+.search-bar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+
+}
+
+.search-bar form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.search-bar label {
+	font-size: 18px;
+	margin-right: 10px;
+
+}
+
+.search-bar input[type="text"] {
+	padding-left: 70px;
+	padding-right: 70px;
+    padding: 10px;
+	font-size: 18px;
+	border-radius: 50px;
+	border: none;
+}
+
+.search-bar button[type="submit"] {
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Style data display section */
+.data-display {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+
+/* Placeholder for QR code */
+.qr-code {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	height: 200px;
+	border: 1px solid #ccc;
+
+}

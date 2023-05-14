@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Search</title>
+    <!-- Add necessary CSS stylesheets and JavaScript files -->
+    <link rel="stylesheet" href="{% static 'scanner/qrcod.css' %}">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- Photo bar section -->
+        <div class="photo-bar">
+            <!-- Add photos or any other relevant content here -->
+        </div>
+
+        <!-- Search bar section -->
+        <!-- Search bar section -->
+        <div class="search-bar">
+            <form action="data_display.html" method="post">
+
+                <input type="text" id="barcode" name="barcode" required placeholder="xxx-xxx-xxx" color="#BDBDBD" >
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+
+        <!-- Data display page section -->
+        <!-- <div class="data-display">
+             Display the data retrieved from the back-end here -->
+        </div>
+        <div class="qr-code">
+        <img src="https://chart.apis.google.com/chart?cht=qr&chs=350x350&chl=http://google.com" alt="">
+    </div>
+    </div>
+
+
+</body>
+
+</html>

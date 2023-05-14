@@ -10,8 +10,10 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    return HttpResponse("Web Application Running!")
+    return render(request,'scanner/qrcod.html')
 
+def product_page(request):
+    return render(request,'')
 
 def login_view(request):
     if request.method == "POST":
