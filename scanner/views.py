@@ -3,12 +3,13 @@ from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
+from .models import User
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
 
-def home(request):
+def index(request):
     return HttpResponse("Web Application Running!")
 
 

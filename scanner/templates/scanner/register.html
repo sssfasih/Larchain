@@ -1,0 +1,29 @@
+{% extends 'scanner/layout.html'%}
+{% block title %}LarChain - Sign Up{% endblock %}
+{% block theForm %}
+<form action="#" method="post" class="my-4 container">
+        <h4 class="card-title mb-2">Sign Up</h4>
+        {% csrf_token %}
+        <div class="form-group">
+            <input class="form-control my-2" autofocus type="text" name="Name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input class="form-control my-2" autofocus type="text" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input class="form-control my-2" type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <input class="form-control my-2" type="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input class="form-control my-2" type="password" name="confirmation" placeholder="Confirm Password">
+        </div>
+        <input class="btn btn-primary mt-3" type="submit" value="Register">
+    </form>
+
+
+    <div class="card-footer text-muted">
+       Already have an account? <a href="{% url 'login' %}">Click here</a> to Login.
+    </div>
+{% endblock %}
