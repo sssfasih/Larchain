@@ -75,10 +75,13 @@ WSGI_APPLICATION = 'Larchain.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+DATABASES={
+    'default':
+    {
+    'ENGINE':'django.db.backends.oracle',
+    'NAME':'(description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-sanjose-1.oraclecloud.com))(connect_data=(service_name=g452686b6dd41e5_zamr6kjq51hirsam_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))',
+    'USER':'admin',
+    'PASSWORD':'GHf#93zh6pPhw6c',#Please provide the db password here
     }
 }
 
